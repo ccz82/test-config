@@ -1,27 +1,34 @@
-{ config, pkgs, hostname, username, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
-    ./hardware-configuration.nix
-    ./nix.nix
     ./bootloader.nix
+    ./nix.nix
     ./networking.nix
     ./bluetooth.nix
     ./graphics.nix
     ./audio.nix
     ./security.nix
-    ./users.nix
     ./timezone.nix
     ./locale.nix
+    ./users.nix
     ./stylix.nix
   ];
 
-  environment.pathsToLink = [ "/share/zsh" ];
+  environment.pathsToLink = [
+    "/share/zsh"
+    "/share/xdg-desktop-portal"
+    "/share/applications"
+  ];
+
   environment.systemPackages = with pkgs; [
     vim
   ];
 
-  programs.zsh.enable = true;
+  programs = {
+    zsh.enable = true;
+    hyprland.enable = true;
+  };
 
   system.stateVersion = "24.05";
 }

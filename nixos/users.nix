@@ -1,14 +1,12 @@
 { pkgs, username, ... }:
 
 {
-  users.users = {
-    ${username} = {
-      isNormalUser = true;
-      extraGroups = [
-        "wheel"
-        "networkmanager"
-      ];
-      shell = pkgs.zsh;
-    };
+  users.users.${username} = {
+    shell = pkgs.zsh;
+    isNormalUser = true;
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+    ];
   };
 }
