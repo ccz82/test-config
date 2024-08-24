@@ -6,6 +6,7 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     stylix.url = "github:danth/stylix";
+    ags.url = "github:Aylur/ags";
   };
 
   outputs = inputs@{ nixpkgs, home-manager, stylix, ... }:
@@ -23,7 +24,7 @@
             ./hosts/chromebook
             home-manager.nixosModules.home-manager
             {
-              home-manager.extraSpecialArgs = { inherit username email; };
+              home-manager.extraSpecialArgs = { inherit inputs username email; };
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.users.${username} = import ./home;
