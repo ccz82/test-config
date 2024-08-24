@@ -2,14 +2,14 @@
 
 {
   imports = [
-    ./nixpkgs.nix
     ./git.nix
+    ./gh.nix
     ./zsh.nix
     ./starship.nix
     ./hyprland.nix
+    ./xdg.nix
     ./kitty.nix
     ./wofi.nix
-    ./xdg.nix
     ./firefox.nix
   ];
 

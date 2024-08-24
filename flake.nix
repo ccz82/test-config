@@ -20,7 +20,7 @@
           inherit specialArgs;
           system = "x86_64-linux";
           modules = [
-            ./nixos
+            ./hosts/chromebook
             home-manager.nixosModules.home-manager
             {
               home-manager.extraSpecialArgs = { inherit username email; };

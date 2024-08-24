@@ -2,8 +2,9 @@
 
 {
   imports = [
-    ./bootloader.nix
     ./nix.nix
+    ./nixpkgs.nix
+    ./bootloader.nix
     ./networking.nix
     ./bluetooth.nix
     ./graphics.nix
