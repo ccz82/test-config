@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   imports = [
@@ -24,6 +24,7 @@
 
   environment.systemPackages = with pkgs; [
     vim
+    inputs.zen-browser.packages."${system}".specific
   ];
 
   programs = {

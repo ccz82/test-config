@@ -1,7 +1,8 @@
-{ config, pkgs, username, ... }:
+{ config, username, ... }:
 
 {
   imports = [
+    ./packages.nix
     ./git.nix
     ./gh.nix
     ./zsh.nix
@@ -9,8 +10,7 @@
     ./hyprland.nix
     ./xdg.nix
     ./kitty.nix
-    ./wofi.nix
-    ./firefox.nix
+    ./wofi
   ];
 
   home = {

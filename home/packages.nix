@@ -2,15 +2,21 @@
 
 {
   home.packages = with pkgs; [
+    # utilities
+    brightnessctl
+    fastfetch
     zip
     unzip
     ripgrep
     fzf
     jq
     fd
+
+    # build systems
     gnumake
     xmake
-    fastfetch
+
+    # compilers
     gcc
     rustc
     cargo

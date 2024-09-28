@@ -4,10 +4,10 @@
   stylix = {
     enable = true;
     image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/2k/wallhaven-2k2rmg.jpg";
-      sha256 = "54872257224ef3a5d8c2289a724e276d30c6fb56c8c18d4871d60e60f86ce6f2";
+      url = "https://gruvbox-wallpapers.pages.dev/wallpapers/mix/gruvb99810.png";
+      sha256 = "171c6a1738b6bb9998ab984b547063070f38aac7b538c3e6235b26e2079e3040";
     };
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
     polarity = "dark";
     opacity = {
       terminal = 0.75;
