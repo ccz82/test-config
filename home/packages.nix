@@ -7,10 +7,7 @@
     fastfetch
     zip
     unzip
-    ripgrep
-    fzf
     jq
-    fd
 
     # build systems
     gnumake
@@ -18,11 +15,12 @@
 
     # compilers
     gcc
-    rustc
-    cargo
-    zig
     python3
+    dotnet-sdk
+    opam
+    rustup
+    zig
+    nodejs
     bun
-    tectonic
   ];
 }

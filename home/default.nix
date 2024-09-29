@@ -7,6 +7,7 @@
     ./gh.nix
     ./zsh.nix
     ./starship.nix
+    ./neovim
     ./hyprland.nix
     ./xdg.nix
     ./kitty.nix

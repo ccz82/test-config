@@ -26,25 +26,16 @@
       };
       animations = {
         enabled = true;
-        bezier = [
-          "windowIn, 0.06, 0.71, 0.25, 1"
-          "windowResize, 0.04, 0.67, 0.38, 1"
-        ];
+        bezier = "curve, 0.06, 0.71, 0.25, 1";
         animation = [
-          "windowsIn, 1, 3, windowIn, slide #popin 20%"
-          "windowsOut, 1, 3, windowIn, slide #popin 70%"
-          "windowsMove, 1, 2.5, windowResize"
-          "border, 1, 10, default"
-          "borderangle, 1, 8, default"
-          "fade, 1, 3, default"
-          "workspaces, 1, 6, default"
-          "layers, 1, 5, windowIn, slide"
+          "windowsIn, 1, 3, curve, slide"
+          "windowsOut, 1, 3, curve, slide"
+          "windowsMove, 1, 2.5, curve"
         ];
       };
-      misc = {
-        disable_hyprland_logo = true;
-        disable_splash_rendering = true;
-      };
+      exec-once = [
+        "waybar"
+      ];
       bind = [
         "$mod SHIFT, p, exit"
         "$mod SHIFT, q, hy3:killactive"
@@ -102,6 +93,10 @@
       windowrulev2 = [
         "float, title:^(Picture-in-Picture)$"
       ];
+      misc = {
+        disable_hyprland_logo = true;
+        disable_splash_rendering = true;
+      };
     };
   };
 }
