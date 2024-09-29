@@ -1,10 +1,8 @@
-{ config, inputs, username, ... }:
+{ config, username, ... }:
 
 {
   imports = [
-    inputs.nixvim.homeManagerModules.nixvim
     ./packages.nix
-    ./nixvim
     ./git.nix
     ./gh.nix
     ./zsh.nix
@@ -12,6 +10,7 @@
     ./hyprland.nix
     ./xdg.nix
     ./kitty.nix
+    ./nixvim
     ./wofi
   ];
 

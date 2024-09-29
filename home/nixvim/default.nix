@@ -1,8 +1,10 @@
-{ ... }:
+{ inputs, ... }:
 
 {
   imports = [
+    inputs.nixvim.homeManagerModules.nixvim
     ./options.nix
+    ./plugins/lsp.nix
   ];
 
   programs.nixvim = {
