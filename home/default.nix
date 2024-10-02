@@ -1,17 +1,17 @@
-{ config, username, ... }:
-
-{
+{username, ...}: {
   imports = [
     ./packages.nix
     ./git.nix
     ./gh.nix
     ./zsh.nix
     ./starship.nix
+    ./nixvim
     ./hyprland.nix
     ./xdg.nix
     ./kitty.nix
-    ./nixvim
+    ./waybar
     ./wofi
+    ./opam.nix
   ];
 
   home = {

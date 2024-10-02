@@ -1,6 +1,6 @@
-{ lib, ... }:
-
 {
+  stylix.targets.wofi.enable = false;
+
   programs.wofi = {
     enable = true;
     settings = {
@@ -9,6 +9,6 @@
       no_actions = true;
       hide_scroll = true;
     };
-    style = lib.mkForce (builtins.readFile ./style.css);
+    style = builtins.readFile ./style.css;
   };
 }

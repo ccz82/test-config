@@ -1,29 +1,33 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   wayland.windowManager.hyprland = {
     enable = true;
-    plugins = with pkgs.hyprlandPlugins; [ hy3 ];
+    plugins = with pkgs.hyprlandPlugins; [hy3];
     settings = {
       "$mod" = "ALT";
+
       general = {
         layout = "hy3";
         gaps_out = 10;
       };
+
       monitor = "eDP-1, preferred, auto, 2";
+
       input = {
         kb_options = "caps:escape";
         touchpad = {
           natural_scroll = true;
         };
       };
+
       gestures = {
         workspace_swipe = true;
         workspace_swipe_fingers = 3;
       };
+
       decoration = {
         rounding = 10;
       };
+
       animations = {
         enabled = true;
         bezier = "curve, 0.06, 0.71, 0.25, 1";
@@ -33,9 +37,11 @@
           "windowsMove, 1, 2.5, curve"
         ];
       };
+
       exec-once = [
         "waybar"
       ];
+
       bind = [
         "$mod SHIFT, p, exit"
         "$mod SHIFT, q, hy3:killactive"
@@ -69,6 +75,7 @@
         "$mod SHIFT, 8, hy3:movetoworkspace, 8"
         "$mod SHIFT, 9, hy3:movetoworkspace, 9"
       ];
+
       bindl = [
         ", switch:on:Lid Switch, exec, hyprctl keyword monitor \"eDP-1, disable\""
         ", switch:off:Lid Switch, exec, hyprctl keyword monitor \"eDP-1, preferred, auto, 2\""
@@ -77,22 +84,29 @@
         ", XF86AudioPrev, exec, playerctl previous"
         ", XF86AudioNext, exec, playerctl next"
       ];
+
       bindel = [
         ", XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ --limit 1.0"
         ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- --limit 1.0"
         ", XF86MonBrightnessUp, exec, brightnessctl set 5%+ --min-value 16"
         ", XF86MonBrightnessDown, exec, brightnessctl set 5%- --min-value 16"
       ];
+
       bindm = [
         "$mod, mouse:272, movewindow"
         "$mod, mouse:273, resizewindow"
       ];
+
       layerrule = [
         "noanim, wofi"
+        "blur, waybar"
       ];
+
       windowrulev2 = [
         "float, title:^(Picture-in-Picture)$"
+        "pin, title:^(Picture-in-Picture)$"
       ];
+
       misc = {
         disable_hyprland_logo = true;
         disable_splash_rendering = true;

@@ -11,44 +11,47 @@
     zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, nixvim, stylix, ... }:
-    let
-      username = "ccz";
-      email = "chunzhen82@gmail.com";
-      specialArgs = { inherit username inputs; };
-    in
-    {
-      nixosConfigurations = {
-        zenbook = nixpkgs.lib.nixosSystem {
-          inherit specialArgs;
-          system = "x86_64-linux";
-          modules = [
-            ./hosts/zenbook
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.extraSpecialArgs = { inherit inputs username email; };
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.${username} = import ./home;
-            }
-            stylix.nixosModules.stylix
-          ];
-        };
-        chromebook = nixpkgs.lib.nixosSystem {
-          inherit specialArgs;
-          system = "x86_64-linux";
-          modules = [
-            ./hosts/chromebook
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.extraSpecialArgs = { inherit inputs username email; };
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.${username} = import ./home;
-            }
-            stylix.nixosModules.stylix
-          ];
-        };
+  outputs = inputs @ {
+    nixpkgs,
+    home-manager,
+    stylix,
+    ...
+  }: let
+    username = "ccz";
+    email = "chunzhen82@gmail.com";
+    specialArgs = {inherit username inputs;};
+  in {
+    nixosConfigurations = {
+      zenbook = nixpkgs.lib.nixosSystem {
+        inherit specialArgs;
+        system = "x86_64-linux";
+        modules = [
+          ./hosts/zenbook
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.extraSpecialArgs = {inherit inputs username email;};
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.${username} = import ./home;
+          }
+          stylix.nixosModules.stylix
+        ];
+      };
+      chromebook = nixpkgs.lib.nixosSystem {
+        inherit specialArgs;
+        system = "x86_64-linux";
+        modules = [
+          ./hosts/chromebook
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.extraSpecialArgs = {inherit inputs username email;};
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.${username} = import ./home;
+          }
+          stylix.nixosModules.stylix
+        ];
       };
     };
+  };
 }

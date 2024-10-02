@@ -1,6 +1,8 @@
-{ pkgs, inputs, ... }:
-
 {
+  pkgs,
+  inputs,
+  ...
+}: {
   imports = [
     ./nix.nix
     ./nixpkgs.nix
@@ -13,7 +15,9 @@
     ./timezone.nix
     ./locale.nix
     ./users.nix
+    ./greetd.nix
     ./stylix.nix
+    ./flatpak.nix
   ];
 
   environment.pathsToLink = [
