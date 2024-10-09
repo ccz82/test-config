@@ -2,7 +2,7 @@
   extraPackages = with pkgs; [
     alejandra
     shfmt
-    prettierd
+    # prettier
   ];
 
   plugins = {
@@ -12,15 +12,15 @@
         formatters_by_ft = {
           nix = ["alejandra"];
           sh = ["shfmt"];
-          html = ["prettierd"];
-          css = ["prettierd"];
-          javascript = ["prettierd"];
-          javascriptreact = ["prettierd"];
-          typescript = ["prettierd"];
-          typescriptreact = ["prettierd"];
-          markdown = ["prettierd"];
-          json = ["prettierd"];
-          jsonc = ["prettierd"];
+          html = ["prettier"];
+          css = ["prettier"];
+          javascript = ["prettier"];
+          javascriptreact = ["prettier"];
+          typescript = ["prettier"];
+          typescriptreact = ["prettier"];
+          markdown = ["prettier"];
+          json = ["prettier"];
+          jsonc = ["prettier"];
         };
       };
     };

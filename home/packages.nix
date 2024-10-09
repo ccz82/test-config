@@ -3,6 +3,7 @@
     # utilities
     hyprpicker
     brightnessctl
+    pavucontrol
     fastfetch
     zip
     unzip
