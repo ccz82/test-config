@@ -6,6 +6,7 @@
         sources = [
           {name = "nvim_lsp";}
           {name = "luasnip";}
+          {name = "copilot";}
           {name = "path";}
           {name = "buffer";}
         ];
@@ -59,5 +60,9 @@
     };
     luasnip.enable = true;
     friendly-snippets.enable = true;
+    lspkind = {
+      enable = true;
+      cmp.enable = true;
+    };
   };
 }

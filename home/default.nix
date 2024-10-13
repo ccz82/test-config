@@ -5,8 +5,9 @@
     ./gh.nix
     ./zsh.nix
     ./starship.nix
+    ./man.nix
     ./nixvim
-    ./hyprland.nix
+    ./hyprland
     ./xdg.nix
     ./kitty.nix
     ./waybar

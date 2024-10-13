@@ -1,7 +1,5 @@
 {
   plugins = {
-    leap = {
-      enable = true;
-    };
+    leap.enable = true;
   };
 }

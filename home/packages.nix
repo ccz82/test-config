@@ -1,13 +1,13 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     # utilities
-    hyprpicker
     brightnessctl
-    pavucontrol
     fastfetch
     zip
     unzip
     jq
+    fd
+    ripgrep
 
     # compilers and interpreters
     gcc
@@ -31,5 +31,6 @@
 
     # programs
     discord
+    zathura
   ];
 }

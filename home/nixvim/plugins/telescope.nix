@@ -19,10 +19,16 @@
             desc = "Find files";
           };
         };
-        "<Leader>lg" = {
+        "<Leader>ft" = {
           action = "live_grep";
           options = {
             desc = "Find text";
+          };
+        };
+        "<Leader>fb" = {
+          action = "buffers";
+          options = {
+            desc = "Change buffer";
           };
         };
         "<Leader>fc" = {
