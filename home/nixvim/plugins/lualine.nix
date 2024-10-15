@@ -1,8 +1,5 @@
 {
   plugins = {
-    lualine = {
-      enable = true;
-      # TODO: add lualine-so-fancy
-    };
+    lualine.enable = true;
   };
 }

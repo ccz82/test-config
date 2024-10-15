@@ -2,6 +2,7 @@
   extraPackages = with pkgs; [
     alejandra
     shfmt
+    csharpier
     # prettier
   ];
 
@@ -12,6 +13,7 @@
         formatters_by_ft = {
           nix = ["alejandra"];
           sh = ["shfmt"];
+          csharp = ["csharpier"];
           html = ["prettier"];
           css = ["prettier"];
           javascript = ["prettier"];

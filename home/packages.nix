@@ -12,7 +12,7 @@
     # compilers and interpreters
     gcc
     python3
-    dotnet-sdk
+    dotnet-sdk_8
     rustup
     zig
     nodejs
