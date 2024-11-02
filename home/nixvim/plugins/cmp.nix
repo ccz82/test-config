@@ -6,10 +6,10 @@
         sources = [
           {name = "nvim_lsp";}
           {name = "luasnip";}
-          {name = "copilot";}
           {name = "path";}
           {name = "buffer";}
         ];
+        window.documentation.winhighlight = "Normal:GruvboxFg4";
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
           "<C-e>" = "cmp.mapping.close()";

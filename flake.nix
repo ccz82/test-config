@@ -8,6 +8,7 @@
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
     stylix.url = "github:danth/stylix";
+    hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
     zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
@@ -15,6 +16,7 @@
     nixpkgs,
     home-manager,
     stylix,
+    hyprpanel,
     ...
   }: let
     username = "ccz";
@@ -35,21 +37,7 @@
             home-manager.users.${username} = import ./home;
           }
           stylix.nixosModules.stylix
-        ];
-      };
-      chromebook = nixpkgs.lib.nixosSystem {
-        inherit specialArgs;
-        system = "x86_64-linux";
-        modules = [
-          ./hosts/chromebook
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.extraSpecialArgs = {inherit inputs username email;};
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.${username} = import ./home;
-          }
-          stylix.nixosModules.stylix
+          {nixpkgs.overlays = [hyprpanel.overlay];}
         ];
       };
     };

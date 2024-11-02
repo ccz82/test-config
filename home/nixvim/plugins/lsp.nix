@@ -2,6 +2,14 @@
   plugins = {
     lsp = {
       enable = true;
+      inlayHints = true;
+      keymaps.lspBuf = {
+        K = "hover";
+        gD = "references";
+        gd = "definition";
+        gi = "implementation";
+        gt = "type_definition";
+      };
       servers = {
         nixd.enable = true;
         bashls.enable = true;

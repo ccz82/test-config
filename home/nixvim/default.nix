@@ -15,7 +15,6 @@
       ./config/clipboard.nix
       ./plugins/lsp.nix
       ./plugins/cmp.nix
-      ./plugins/copilot.nix
       ./plugins/conform.nix
       ./plugins/treesitter.nix
       ./plugins/telescope.nix
@@ -26,6 +25,7 @@
       ./plugins/autopairs.nix
       ./plugins/todo-comments.nix
       ./plugins/web-devicons.nix
+      ./plugins/wakatime.nix
     ];
   };
 }

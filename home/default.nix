@@ -1,16 +1,20 @@
 {username, ...}: {
   imports = [
     ./packages.nix
+    ./zsh.nix
     ./git.nix
     ./gh.nix
-    ./zsh.nix
     ./starship.nix
-    ./man.nix
+    ./fastfetch.nix
+    ./bat.nix
+    ./ripgrep.nix
+    ./jq.nix
+    ./fd.nix
     ./nixvim
     ./hyprland
+    ./hyprlock.nix
     ./xdg.nix
     ./kitty.nix
-    ./waybar
     ./wofi
     ./opam.nix
   ];

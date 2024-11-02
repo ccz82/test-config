@@ -1,5 +1,5 @@
 {
-  programs.man = {
+  documentation.man = {
     enable = true;
     generateCaches = true;
   };

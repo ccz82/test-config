@@ -1,13 +1,14 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    # hyprland
+    hyprpanel
+    hyprpicker
+    hyprshot
+
     # utilities
     brightnessctl
-    fastfetch
     zip
     unzip
-    jq
-    fd
-    ripgrep
 
     # compilers and interpreters
     gcc
@@ -27,6 +28,7 @@
     man-pages-posix
 
     # games
+    lutris
     prismlauncher
 
     # programs
