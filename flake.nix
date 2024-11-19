@@ -8,7 +8,6 @@
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
     stylix.url = "github:danth/stylix";
-    hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
     zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
@@ -16,7 +15,6 @@
     nixpkgs,
     home-manager,
     stylix,
-    hyprpanel,
     ...
   }: let
     username = "ccz";
@@ -37,7 +35,6 @@
             home-manager.users.${username} = import ./home;
           }
           stylix.nixosModules.stylix
-          {nixpkgs.overlays = [hyprpanel.overlay];}
         ];
       };
     };

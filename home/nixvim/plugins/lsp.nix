@@ -5,6 +5,7 @@
       inlayHints = true;
       keymaps.lspBuf = {
         K = "hover";
+        "<Leader>rn" = "rename";
         gD = "references";
         gd = "definition";
         gi = "implementation";

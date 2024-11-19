@@ -5,6 +5,7 @@
     ./git.nix
     ./gh.nix
     ./starship.nix
+    ./yazi.nix
     ./fastfetch.nix
     ./bat.nix
     ./ripgrep.nix
