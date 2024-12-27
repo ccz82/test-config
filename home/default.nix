@@ -13,7 +13,6 @@
     ./fd.nix
     ./nixvim
     ./hyprland
-    ./hyprlock.nix
     ./xdg.nix
     ./kitty.nix
     ./wofi

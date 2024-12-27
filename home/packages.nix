@@ -5,9 +5,11 @@
     hyprshot
 
     # utilities
+    pavucontrol
     brightnessctl
     zip
     unzip
+    lazysql
 
     # compilers and interpreters
     gcc
@@ -31,7 +33,7 @@
     prismlauncher
 
     # programs
-    discord
+    vesktop
     zathura
   ];
 }

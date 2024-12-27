@@ -15,6 +15,7 @@
       ./config/clipboard.nix
       ./plugins/lsp.nix
       ./plugins/cmp.nix
+      ./plugins/copilot.nix
       ./plugins/conform.nix
       ./plugins/treesitter.nix
       ./plugins/telescope.nix
