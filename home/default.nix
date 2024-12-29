@@ -11,6 +11,7 @@
     ./ripgrep.nix
     ./jq.nix
     ./fd.nix
+    ./editorconfig.nix
     ./nixvim
     ./hyprland
     ./xdg.nix

@@ -4,10 +4,6 @@
       "$mod SHIFT, p, exit"
       "$mod SHIFT, q, hy3:killactive"
       "$mod, Return, exec, kitty"
-      "$mod SHIFT, n, exec, kitty --session ~/.config/kitty/quartz.conf"
-      "$mod, Space, exec, pkill wofi || wofi --show drun"
-      "$mod, PRINT, exec, hyprshot -m output"
-      "$mod SHIFT, f, fullscreen, 0"
       "$mod, h, hy3:movefocus, l"
       "$mod, j, hy3:movefocus, d"
       "$mod, k, hy3:movefocus, u"
@@ -25,6 +21,7 @@
       "$mod, 7, workspace, 7"
       "$mod, 8, workspace, 8"
       "$mod, 9, workspace, 9"
+      "$mod, minus, workspace, name:ipad"
       "$mod SHIFT, 1, hy3:movetoworkspace, 1"
       "$mod SHIFT, 2, hy3:movetoworkspace, 2"
       "$mod SHIFT, 3, hy3:movetoworkspace, 3"
@@ -34,6 +31,14 @@
       "$mod SHIFT, 7, hy3:movetoworkspace, 7"
       "$mod SHIFT, 8, hy3:movetoworkspace, 8"
       "$mod SHIFT, 9, hy3:movetoworkspace, 9"
+      "$mod SHIFT, minus, hy3:movetoworkspace, name:ipad"
+      "$mod SHIFT, b, hy3:makegroup, h"
+      "$mod SHIFT, v, hy3:makegroup, v"
+      "$mod SHIFT, f, fullscreen, 0"
+      "$mod SHIFT, n, exec, kitty --session ~/.config/kitty/quartz.conf"
+      "$mod SHIFT, i, exec, hyprctl output create headless ipad && wayvnc --output=ipad --gpu 0.0.0.0"
+      "$mod, Space, exec, pkill wofi || wofi --show drun"
+      "$mod, PRINT, exec, hyprshot -m output"
     ];
   };
 }

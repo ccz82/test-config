@@ -14,7 +14,8 @@
       ./config/colorschemes.nix
       ./config/clipboard.nix
       ./plugins/lsp.nix
-      ./plugins/cmp.nix
+      # ./plugins/cmp.nix
+      ./plugins/blink.nix
       ./plugins/copilot.nix
       ./plugins/conform.nix
       ./plugins/treesitter.nix

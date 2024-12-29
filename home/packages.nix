@@ -3,6 +3,7 @@
     # hyprland
     hyprpicker
     hyprshot
+    wayvnc
 
     # utilities
     pavucontrol
