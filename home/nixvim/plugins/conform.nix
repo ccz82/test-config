@@ -3,7 +3,7 @@
     alejandra
     shfmt
     csharpier
-    # prettier
+    nodePackages.prettier
   ];
 
   plugins = {
@@ -13,7 +13,7 @@
         formatters_by_ft = {
           nix = ["alejandra"];
           sh = ["shfmt"];
-          csharp = ["csharpier"];
+          cs = ["csharpier"];
           html = ["prettier"];
           css = ["prettier"];
           javascript = ["prettier"];

@@ -1,23 +1,24 @@
 {username, ...}: {
   imports = [
-    ./packages.nix
-    ./zsh.nix
-    ./git.nix
-    ./gh.nix
-    ./starship.nix
-    ./yazi.nix
-    ./fastfetch.nix
-    ./bat.nix
-    ./ripgrep.nix
-    ./jq.nix
-    ./fd.nix
-    ./editorconfig.nix
-    ./nixvim
     ./hyprland
-    ./xdg.nix
-    ./kitty.nix
+    ./nixvim
     ./wofi
+    ./bat.nix
+    ./editorconfig.nix
+    ./fastfetch.nix
+    ./fd.nix
+    ./gh.nix
+    ./git.nix
+    ./jq.nix
+    ./kitty.nix
+    ./lazygit.nix
     ./opam.nix
+    ./packages.nix
+    ./ripgrep.nix
+    ./starship.nix
+    ./xdg.nix
+    ./yazi.nix
+    ./zsh.nix
   ];
 
   home = {

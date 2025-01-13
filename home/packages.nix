@@ -1,5 +1,12 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   home.packages = with pkgs; [
+    # browser
+    inputs.zen-browser.packages."${system}".twilight
+
     # hyprland
     hyprpicker
     hyprshot
