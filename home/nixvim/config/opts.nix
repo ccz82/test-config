@@ -5,6 +5,8 @@
     wrap = false;
     showmode = false;
     number = true;
+    relativenumber = true;
+    scrolloff = 10;
     cursorline = true;
     signcolumn = "yes";
     expandtab = true;

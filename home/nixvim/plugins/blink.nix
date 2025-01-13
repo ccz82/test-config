@@ -8,7 +8,7 @@
           default = [
             "lsp"
             "path"
-            "luasnip"
+            "snippets"
             "buffer"
             "copilot"
           ];

@@ -14,11 +14,11 @@
           on-resume = "brightnessctl -r";
         }
         {
-          timeout = 180;
+          timeout = 300;
           on-timeout = "loginctl lock-session";
         }
         {
-          timeout = 300;
+          timeout = 420;
           on-timeout = "hyprctl dispatch dpms off";
           on-resume = "hyprctl dispatch dpms on";
         }

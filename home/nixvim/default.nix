@@ -13,21 +13,20 @@
       ./config/opts.nix
       ./config/colorschemes.nix
       ./config/clipboard.nix
-      ./plugins/lsp.nix
-      # ./plugins/cmp.nix
+      ./plugins/autopairs.nix
       ./plugins/blink.nix
-      ./plugins/copilot.nix
       ./plugins/conform.nix
-      ./plugins/treesitter.nix
-      ./plugins/telescope.nix
+      ./plugins/copilot.nix
+      ./plugins/gitsigns.nix
+      ./plugins/ibl.nix
+      ./plugins/leap.nix
+      ./plugins/lsp.nix
       ./plugins/lualine.nix
       ./plugins/oil.nix
-      ./plugins/leap.nix
-      ./plugins/ibl.nix
-      ./plugins/autopairs.nix
+      ./plugins/telescope.nix
       ./plugins/todo-comments.nix
+      ./plugins/treesitter.nix
       ./plugins/web-devicons.nix
-      ./plugins/wakatime.nix
     ];
   };
 }
