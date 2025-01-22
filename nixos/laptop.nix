@@ -1,8 +1,9 @@
 {
-  powerManagement.enable = true;
+  powerManagement.enable = false;
 
   services.auto-cpufreq = {
-    enable = true;
+    # enable = true;
+    enable = false;
     settings = {
       battery = {
         governor = "powersave";

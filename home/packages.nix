@@ -4,13 +4,15 @@
   ...
 }: {
   home.packages = with pkgs; [
-    # browser
-    inputs.zen-browser.packages."${system}".twilight
-
     # hyprland
+    hyprpolkitagent
     hyprpicker
     hyprshot
     wayvnc
+
+    # browser
+    inputs.zen-browser.packages."${system}".twilight
+    firefox
 
     # utilities
     pavucontrol
@@ -43,5 +45,6 @@
     # programs
     vesktop
     zathura
+    vial
   ];
 }

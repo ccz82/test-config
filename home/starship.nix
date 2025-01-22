@@ -4,7 +4,7 @@
     settings = {
       character = {
         success_symbol = "[➜](bold green)";
-        error_symbol = "[󰜃](red)";
+        error_symbol = "[➜](red)";
       };
     };
   };

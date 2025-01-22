@@ -36,7 +36,7 @@
       "$mod SHIFT, v, hy3:makegroup, v"
       "$mod SHIFT, f, fullscreen, 0"
       "$mod SHIFT, n, exec, kitty --session ~/.config/kitty/quartz.conf"
-      "$mod SHIFT, i, exec, hyprctl output create headless ipad && wayvnc --output=ipad --gpu 0.0.0.0"
+      "$mod SHIFT, i, exec, hyprctl output create headless ipad-display && wayvnc --output=ipad --gpu 0.0.0.0"
       "$mod, Space, exec, pkill wofi || wofi --show drun"
       "$mod, PRINT, exec, hyprshot -m output"
     ];

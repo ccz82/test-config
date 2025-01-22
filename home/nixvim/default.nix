@@ -23,6 +23,7 @@
       ./plugins/lsp.nix
       ./plugins/lualine.nix
       ./plugins/oil.nix
+      ./plugins/surround.nix
       ./plugins/telescope.nix
       ./plugins/todo-comments.nix
       ./plugins/treesitter.nix

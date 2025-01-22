@@ -1,4 +1,4 @@
-{...}: {
+{
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -6,6 +6,7 @@
     syntaxHighlighting.enable = true;
     shellAliases = {
       update = "sudo nixos-rebuild switch --flake .";
+      z = "zellij -l welcome";
     };
   };
 }
