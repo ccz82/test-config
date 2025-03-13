@@ -11,6 +11,7 @@
       scrollbar.show = "never";
       outline_panel.dock = "right";
       inlay_hints.enable = true;
+      load_direnv = "shell_hook";
       assistant = {
         version = "2";
         default_model = {

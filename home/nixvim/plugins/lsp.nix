@@ -29,7 +29,7 @@
         };
         zls.enable = true;
         ts_ls.enable = true;
-        eslint.enable = true;
+        biome.enable = true;
         html.enable = true;
         cssls.enable = true;
         tailwindcss.enable = true;

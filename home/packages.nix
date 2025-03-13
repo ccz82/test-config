@@ -45,6 +45,8 @@
     # programs
     vesktop
     zathura
-    vial
+    aseprite
+    obs-studio
+    vlc
   ];
 }
