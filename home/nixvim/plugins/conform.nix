@@ -2,7 +2,7 @@
   extraPackages = with pkgs; [
     alejandra
     shfmt
-    csharpier
+    biome
     nodePackages.prettier
   ];
 
@@ -10,19 +10,17 @@
     conform-nvim = {
       enable = true;
       settings = {
+        formatters = {
+          biome = {
+            require_cwd = true;
+          };
+        };
         formatters_by_ft = {
           nix = ["alejandra"];
           sh = ["shfmt"];
-          cs = ["csharpier"];
-          # html = ["prettier"];
-          # css = ["prettier"];
-          # javascript = ["prettier"];
-          # javascriptreact = ["prettier"];
-          # typescript = ["prettier"];
-          # typescriptreact = ["prettier"];
+          # TODO: Change to biome when it is ready
+          html = ["prettier"];
           markdown = ["prettier"];
-          json = ["prettier"];
-          jsonc = ["prettier"];
         };
       };
     };

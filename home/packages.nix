@@ -8,11 +8,9 @@
     hyprpolkitagent
     hyprpicker
     hyprshot
-    wayvnc
 
     # browser
-    inputs.zen-browser.packages."${system}".twilight
-    firefox
+    inputs.zen-browser.packages."${system}".default
 
     # utilities
     pavucontrol
@@ -21,32 +19,19 @@
     unzip
     lazysql
 
-    # compilers and interpreters
-    gcc
+    # runtimes
     python3
-    dotnet-sdk_8
-    rustup
-    zig
-    nodejs
     bun
-
-    # build systems
-    gnumake
-    xmake
-
-    # man pages
-    man-pages
-    man-pages-posix
 
     # games
     lutris
     prismlauncher
+    balatro
 
     # programs
     vesktop
     zathura
     aseprite
     obs-studio
-    vlc
   ];
 }

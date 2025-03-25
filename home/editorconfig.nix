@@ -13,7 +13,7 @@
         indent_style = "space";
         indent_size = 2;
       };
-      "*.{c,h,cpp,hpp,cc,cs,rs,py,zig}" = {
+      "*.{c,h,cpp,hpp,cc,rs,py,zig}" = {
         indent_style = "space";
         indent_size = 4;
       };

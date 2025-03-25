@@ -32,7 +32,6 @@
             home-manager.extraSpecialArgs = {inherit inputs username email;};
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.backupFileExtension = "backup1";
             home-manager.users.${username} = import ./home;
           }
           stylix.nixosModules.stylix

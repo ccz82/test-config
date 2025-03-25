@@ -10,19 +10,15 @@
     ./fd.nix
     ./gh.nix
     ./git.nix
+    ./helix.nix
     ./jq.nix
     ./kitty.nix
     ./lazygit.nix
-    ./man.nix
-    ./opam.nix
     ./packages.nix
     ./ripgrep.nix
     ./starship.nix
-    ./waybar.nix
     ./xdg.nix
     ./yazi.nix
-    ./zed.nix
-    ./zellij.nix
     ./zsh.nix
   ];
 

@@ -1,9 +1,16 @@
 {pkgs, ...}: {
-  environment.pathsToLink = [
-    "/share/zsh"
-    "/share/xdg-desktop-portal"
-    "/share/applications"
-  ];
-
-  environment.systemPackages = with pkgs; [vim];
+  environment = {
+    pathsToLink = [
+      "/share/zsh"
+      "/share/xdg-desktop-portal"
+      "/share/applications"
+    ];
+    systemPackages = with pkgs; [
+      vim
+      gcc
+      gnumake
+      man-pages
+      man-pages-posix
+    ];
+  };
 }

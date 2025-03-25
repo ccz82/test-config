@@ -2,9 +2,9 @@
   plugins = {
     lsp = {
       enable = true;
-      inlayHints = true;
       keymaps.lspBuf = {
         K = "hover";
+        "<Leader>ca" = "code_action";
         "<Leader>rn" = "rename";
         gD = "references";
         gd = "definition";
@@ -12,6 +12,7 @@
         gt = "type_definition";
       };
       servers = {
+        nil_ls.enable = true;
         nixd.enable = true;
         bashls.enable = true;
         clangd.enable = true;
