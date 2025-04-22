@@ -32,6 +32,8 @@
     vesktop
     zathura
     aseprite
+    tiled
     obs-studio
+    modrinth-app
   ];
 }

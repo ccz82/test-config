@@ -4,6 +4,7 @@
     shfmt
     biome
     nodePackages.prettier
+    rustfmt
   ];
 
   plugins = {
@@ -21,6 +22,8 @@
           # TODO: Change to biome when it is ready
           html = ["prettier"];
           markdown = ["prettier"];
+          toml = ["prettier"];
+          rust = ["rustfmt"];
         };
       };
     };

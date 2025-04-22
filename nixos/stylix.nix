@@ -1,18 +1,12 @@
 {pkgs, ...}: {
   stylix = {
     enable = true;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
     image = pkgs.fetchurl {
-      url = "https://gruvbox-wallpapers.pages.dev/wallpapers/mix/gruvb99810.png";
-      sha256 = "171c6a1738b6bb9998ab984b547063070f38aac7b538c3e6235b26e2079e3040";
+      url = "https://w.wallhaven.cc/full/rr/wallhaven-rrv7x7.jpg";
+      sha256 = "sha256-3E6jDIC++w1wuIMv1keYPqbJDk8kSAdWm1B3C2MK9cs=";
     };
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
-    polarity = "dark";
-    opacity = {
-      terminal = 0.75;
-      applications = 1.0;
-      desktop = 1.0;
-      popups = 1.0;
-    };
+    opacity.terminal = 0.85;
     fonts = {
       sansSerif = {
         package = pkgs.noto-fonts;
@@ -22,20 +16,15 @@
         package = pkgs.noto-fonts;
         name = "Noto Serif";
       };
-      emoji = {
-        package = pkgs.noto-fonts-emoji;
-        name = "Noto Color Emoji";
-      };
       monospace = {
         package = pkgs.nerd-fonts.jetbrains-mono;
         name = "JetBrainsMono Nerd Font Mono";
       };
-      sizes = {
-        terminal = 14;
-        applications = 12;
-        desktop = 12;
-        popups = 12;
-      };
+      sizes.terminal = 14;
+    };
+    cursor = {
+      package = pkgs.posy-cursors;
+      name = "Posy_Cursor_Black";
     };
   };
 }

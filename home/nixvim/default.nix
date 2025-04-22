@@ -16,7 +16,6 @@
       ./plugins/autopairs.nix
       ./plugins/blink.nix
       ./plugins/conform.nix
-      ./plugins/copilot.nix
       ./plugins/gitsigns.nix
       ./plugins/ibl.nix
       ./plugins/leap.nix

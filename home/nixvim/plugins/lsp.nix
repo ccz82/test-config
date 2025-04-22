@@ -29,6 +29,7 @@
           installRustc = false;
         };
         zls.enable = true;
+        lua_ls.enable = true;
         ts_ls.enable = true;
         biome.enable = true;
         html.enable = true;

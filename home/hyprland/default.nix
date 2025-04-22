@@ -20,7 +20,6 @@
     ./settings/bindm.nix
     ./settings/exec-once.nix
     ./settings/layerrule.nix
-    ./settings/windowrule.nix
     ./settings/windowrulev2.nix
     ./settings/xwayland.nix
     ./settings/hy3.nix

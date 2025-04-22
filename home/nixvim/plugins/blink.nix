@@ -1,75 +1,61 @@
-{lib, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   plugins = {
     blink-cmp = {
       enable = true;
       settings = {
         keymap.preset = "super-tab";
-        sources = {
-          default = [
-            "lsp"
-            "path"
-            "snippets"
-            "buffer"
-            "copilot"
-          ];
-          providers = {
-            copilot = {
-              name = "copilot";
-              module = "blink-cmp-copilot";
-              score_offset = -100;
-              async = true;
-              transform_items = lib.nixvim.mkRaw ''
-                function(_, items)
-                  local CompletionItemKind = require("blink.cmp.types").CompletionItemKind
-                  local kind_idx = #CompletionItemKind + 1
-                  CompletionItemKind[kind_idx] = "Copilot"
-                  for _, item in ipairs(items) do
-                    item.kind = kind_idx
+        signature.enabled = true;
+        completion.menu.draw = {
+          # treesitter = ["lsp"];
+          columns = let
+            label = lib.nixvim.listToUnkeyedAttrs ["label"] // {gap = 1;};
+          in [["kind_icon"] label];
+          components = {
+            kind_icon = {
+              text = lib.nixvim.mkRaw ''
+                function(ctx)
+                  local lspkind = require("lspkind")
+                  local icon = ctx.kind_icon
+                  if vim.tbl_contains({ "Path" }, ctx.source_name) then
+                    local dev_icon, _ = require("nvim-web-devicons").get_icon(ctx.label)
+                    if dev_icon then
+                      icon = dev_icon
+                    end
+                  else
+                    icon = require("lspkind").symbolic(ctx.kind, { mode = "symbol" })
                   end
-                  return items
+                  return icon .. ctx.icon_gap
+                end
+              '';
+              highlight = lib.nixvim.mkRaw ''
+                function(ctx)
+                  local hl = ctx.kind_hl
+                  if vim.tbl_contains({ "Path" }, ctx.source_name) then
+                    local dev_icon, dev_hl = require("nvim-web-devicons").get_icon(ctx.label)
+                    if dev_icon then
+                      hl = dev_hl
+                    end
+                  end
+                  return hl
                 end
               '';
             };
+            label = {
+              text = lib.nixvim.mkRaw "function(ctx) return require('colorful-menu').blink_components_text(ctx) end";
+              highlight = lib.nixvim.mkRaw "function(ctx) return require('colorful-menu').blink_components_highlight(ctx) end";
+            };
           };
-        };
-        completion = {
-          documentation.auto_show = true;
-          menu.draw.columns = let
-            a = ["label" "label_description"];
-            b = lib.nixvim.listToUnkeyedAttrs ["kind_icon" "kind"] // {gap = 1;};
-          in [a b];
-        };
-        signature.enabled = true;
-        appearance.kind_icons = {
-          Copilot = "";
-          Text = "󰉿";
-          Method = "󰊕";
-          Function = "󰊕";
-          Constructor = "󰒓";
-          Field = "󰜢";
-          Variable = "󰆦";
-          Property = "󰖷";
-          Class = "󱡠";
-          Interface = "󱡠";
-          Struct = "󱡠";
-          Module = "󰅩";
-          Unit = "󰪚";
-          Value = "󰦨";
-          Enum = "󰦨";
-          EnumMember = "󰦨";
-          Keyword = "󰻾";
-          Constant = "󰏿";
-          Snippet = "󱄽";
-          Color = "󰏘";
-          File = "󰈔";
-          Reference = "󰬲";
-          Folder = "󰉋";
-          Event = "󱐋";
-          Operator = "󰪚";
-          TypeParameter = "󰬛";
         };
       };
     };
+    lspkind.enable = true;
     friendly-snippets.enable = true;
   };
+
+  extraPlugins = with pkgs.vimPlugins; [colorful-menu-nvim];
+  extraConfigLua = ''require("colorful-menu").setup()'';
 }

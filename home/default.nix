@@ -17,6 +17,9 @@
     ./packages.nix
     ./ripgrep.nix
     ./starship.nix
+    ./tmate.nix
+    ./tmux.nix
+    ./waybar.nix
     ./xdg.nix
     ./yazi.nix
     ./zsh.nix

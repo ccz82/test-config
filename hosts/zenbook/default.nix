@@ -4,6 +4,7 @@
     ../../nixos/audio.nix
     ../../nixos/bluetooth.nix
     ../../nixos/bootloader.nix
+    ../../nixos/docker.nix
     ../../nixos/documentation.nix
     ../../nixos/environment.nix
     ../../nixos/flakes.nix
