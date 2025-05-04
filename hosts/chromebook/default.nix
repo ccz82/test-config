@@ -25,7 +25,7 @@
     ../../nixos/users.nix
   ];
 
-  networking.hostName = "zenbook";
+  networking.hostName = "chromebook";
 
   system.stateVersion = "24.05";
 }

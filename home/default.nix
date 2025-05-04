@@ -22,6 +22,7 @@
     ./waybar.nix
     ./xdg.nix
     ./yazi.nix
+    ./zed-editor.nix
     ./zsh.nix
   ];
 

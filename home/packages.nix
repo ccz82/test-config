@@ -22,6 +22,7 @@
     # runtimes
     python3
     bun
+    nodejs
 
     # games
     lutris
@@ -29,6 +30,7 @@
     balatro
 
     # programs
+    upterm
     vesktop
     zathura
     aseprite
