@@ -27,15 +27,10 @@
     # games
     lutris
     prismlauncher
-    balatro
 
     # programs
-    upterm
-    vesktop
     zathura
     aseprite
     tiled
-    obs-studio
-    modrinth-app
   ];
 }
