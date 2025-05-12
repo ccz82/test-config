@@ -2,7 +2,7 @@
   imports = [
     ./hyprland
     ./nixvim
-    ./wofi
+    ./waybar
     ./bat.nix
     ./direnv.nix
     ./editorconfig.nix
@@ -19,12 +19,14 @@
     ./starship.nix
     ./tmate.nix
     ./tmux.nix
-    ./waybar.nix
     ./xdg.nix
     ./yazi.nix
     ./zed-editor.nix
     ./zsh.nix
   ];
+
+  # NOTE: TEMP
+  programs.fuzzel.enable = true;
 
   home = {
     username = "${username}";

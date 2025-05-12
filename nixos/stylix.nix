@@ -6,7 +6,10 @@
       url = "https://w.wallhaven.cc/full/rr/wallhaven-rrv7x7.jpg";
       sha256 = "sha256-3E6jDIC++w1wuIMv1keYPqbJDk8kSAdWm1B3C2MK9cs=";
     };
-    opacity.terminal = 0.85;
+    opacity = {
+      terminal = 0.8;
+      applications = 0.8;
+    };
     fonts = {
       sansSerif = {
         package = pkgs.noto-fonts;
@@ -25,6 +28,7 @@
     cursor = {
       package = pkgs.posy-cursors;
       name = "Posy_Cursor_Black";
+      size = 32;
     };
   };
 }

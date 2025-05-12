@@ -4,6 +4,9 @@
   ...
 }: {
   home.packages = with pkgs; [
+    inputs.iwmenu.packages.${pkgs.system}.default
+    inputs.bzmenu.packages.${pkgs.system}.default
+
     # hyprland
     hyprpolkitagent
     hyprpicker

@@ -33,9 +33,12 @@
       "$mod SHIFT, b, hy3:makegroup, h"
       "$mod SHIFT, v, hy3:makegroup, v"
       "$mod SHIFT, f, fullscreen, 0"
+      "$mod, Print, exec, hyprshot -m region"
+      # NOTE: Remove this in the future.
       "$mod SHIFT, n, exec, kitty --session ~/.config/kitty/quartz.conf"
-      "$mod, Space, exec, pkill wofi || wofi --show drun"
-      "$mod, PRINT, exec, hyprshot -m output"
+      "$mod, Space, exec, fuzzel"
+      "$mod w, Space, exec, iwmenu -l fuzzel"
+      "$mod e, Space, exec, bzmenu -l fuzzel"
     ];
   };
 }

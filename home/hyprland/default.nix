@@ -4,6 +4,7 @@
     plugins = with pkgs.hyprlandPlugins; [hy3];
     settings."$mod" = "ALT";
   };
+
   imports = [
     ./hypridle.nix
     ./hyprlock.nix

@@ -1,0 +1,120 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  color: white;
+  background: transparent;
+}
+
+.modules-left {
+  margin-left: 1rem;
+}
+
+.modules-right {
+  margin-right: 1rem;
+}
+
+#custom-nixos {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#custom-quit,
+#custom-lock,
+#custom-reboot,
+#custom-shutdown {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 0.5rem;
+  padding-right: 0.6rem;
+}
+
+#custom-nixos:hover,
+#custom-quit:hover,
+#custom-lock:hover,
+#custom-reboot:hover,
+#custom-shutdown:hover {
+  color: white;
+}
+
+#workspaces {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+#workspaces:first-child {
+  padding-left: 0.3rem;
+}
+
+#workspaces:last-child {
+  padding-right: 0.3rem;
+}
+
+#workspaces button {
+  background-color: transparent;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#workspaces button.active {
+  color: white;
+}
+
+#cpu-usage,
+#memory-usage {
+  margin-top: 5px;
+}
+
+#custom-cpu,
+#custom-memory {
+  font-weight: 200;
+  font-size: 0.5rem;
+}
+
+#cpu,
+#memory {
+  font-size: 0.6rem;
+}
+
+#hardware {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+#network {
+  padding-left: 0.5rem;
+}
+
+#battery {
+  padding-right: 0.5rem;
+}
+
+#bluetooth {
+  padding-left: 0.5rem;
+  padding-right: 0.8rem;
+}
+
+#controls {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+#pulseaudio {
+  padding-left: 0.5rem;
+}
+
+#backlight {
+  padding-right: 0.5rem;
+}
