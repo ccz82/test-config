@@ -9,8 +9,6 @@
       vim
       gcc
       gnumake
-      man-pages
-      man-pages-posix
     ];
   };
 }

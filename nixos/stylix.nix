@@ -6,11 +6,7 @@
       url = "https://w.wallhaven.cc/full/9d/wallhaven-9dmmr1.jpg";
       sha256 = "sha256-5Gxsb8w3hUHQyXqUhdBPG++olt8OkuoQIfNSU6yeAtU=";
     };
-    opacity = {
-      terminal = 0.8;
-      # NOTE: temp
-      applications = 0.1;
-    };
+    opacity.terminal = 0.8;
     fonts = {
       sansSerif = {
         package = pkgs.noto-fonts;

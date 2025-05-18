@@ -1,8 +1,6 @@
 {
   wayland.windowManager.hyprland.settings = {
     animations = {
-      enabled = true;
-      first_launch_animation = false;
       bezier = "curve, 0.06, 0.71, 0.25, 1";
       animation = [
         "workspaces, 0"

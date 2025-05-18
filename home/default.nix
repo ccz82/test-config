@@ -9,12 +9,14 @@
     ./walker
     ./waybar
     ./bat.nix
+    ./btop.nix
     ./direnv.nix
     ./editorconfig.nix
     ./fastfetch.nix
     ./fd.nix
     ./gh.nix
     ./git.nix
+    ./gnome-keyring.nix
     ./helix.nix
     ./jq.nix
     ./kitty.nix
@@ -22,8 +24,10 @@
     ./lutris.nix
     ./mako.nix
     ./packages.nix
+    ./playerctld.nix
     ./ripgrep.nix
     ./starship.nix
+    ./stylix.nix
     ./tmate.nix
     ./tmux.nix
     ./xdg.nix
@@ -32,11 +36,6 @@
     ./zed-editor.nix
     ./zsh.nix
   ];
-
-  # NOTE: temp
-  stylix.iconTheme.package = pkgs.papirus-icon-theme;
-  stylix.iconTheme.light = "Papirus Light";
-  stylix.iconTheme.dark = "Papirus Dark";
 
   home = {
     username = "${username}";

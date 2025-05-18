@@ -6,10 +6,6 @@
   users.users.${username} = {
     shell = pkgs.zsh;
     isNormalUser = true;
-    extraGroups = [
-      "wheel"
-      "networkmanager"
-      "docker"
-    ];
+    extraGroups = ["wheel"];
   };
 }

@@ -16,7 +16,6 @@
         nixd.enable = true;
         bashls.enable = true;
         clangd.enable = true;
-        csharp_ls.enable = true;
         basedpyright.enable = true;
         ruff.enable = true;
         ocamllsp = {
