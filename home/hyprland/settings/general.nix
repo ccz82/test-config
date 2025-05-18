@@ -1,7 +1,7 @@
 {
   wayland.windowManager.hyprland.settings = {
     general = {
-      layout = "hy3";
+      layout = "master";
       gaps_out = 10;
     };
   };

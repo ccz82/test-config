@@ -50,11 +50,11 @@ window#waybar {
 }
 
 #workspaces:first-child {
-  padding-left: 0.3rem;
+  padding-left: 0.2rem;
 }
 
 #workspaces:last-child {
-  padding-right: 0.3rem;
+  padding-right: 0.2rem;
 }
 
 #workspaces button {
@@ -113,8 +113,10 @@ window#waybar {
 
 #pulseaudio {
   padding-left: 0.5rem;
+  padding-right: 0.2rem;
 }
 
 #backlight {
+  padding-left: 0.2rem;
   padding-right: 0.5rem;
 }

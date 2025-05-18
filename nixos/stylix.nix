@@ -3,12 +3,13 @@
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
     image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/rr/wallhaven-rrv7x7.jpg";
-      sha256 = "sha256-3E6jDIC++w1wuIMv1keYPqbJDk8kSAdWm1B3C2MK9cs=";
+      url = "https://w.wallhaven.cc/full/9d/wallhaven-9dmmr1.jpg";
+      sha256 = "sha256-5Gxsb8w3hUHQyXqUhdBPG++olt8OkuoQIfNSU6yeAtU=";
     };
     opacity = {
       terminal = 0.8;
-      applications = 0.8;
+      # NOTE: temp
+      applications = 0.1;
     };
     fonts = {
       sansSerif = {

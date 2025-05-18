@@ -2,8 +2,9 @@
   wayland.windowManager.hyprland.settings = {
     layerrule = [
       "blur, waybar"
-      "blur, fuzzel"
-      "noanim, fuzzel"
+      "blur, walker"
+      "noanim, waybar"
+      "noanim, walker"
     ];
   };
 }

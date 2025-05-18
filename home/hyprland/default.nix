@@ -1,13 +1,18 @@
 {pkgs, ...}: {
+  home.packages = with pkgs; [
+    hyprshot
+    hyprpicker
+  ];
+
   wayland.windowManager.hyprland = {
     enable = true;
-    plugins = with pkgs.hyprlandPlugins; [hy3];
     settings."$mod" = "ALT";
   };
 
   imports = [
     ./hypridle.nix
     ./hyprlock.nix
+    ./hyprpolkitagent.nix
     ./settings/general.nix
     ./settings/misc.nix
     ./settings/monitor.nix
@@ -23,6 +28,7 @@
     ./settings/layerrule.nix
     ./settings/windowrulev2.nix
     ./settings/xwayland.nix
-    ./settings/hy3.nix
+    # NOTE: This is a workaround for submap
+    ./settings/resize.nix
   ];
 }

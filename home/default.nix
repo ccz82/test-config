@@ -1,7 +1,12 @@
-{username, ...}: {
+{
+  username,
+  pkgs,
+  ...
+}: {
   imports = [
     ./hyprland
     ./nixvim
+    ./walker
     ./waybar
     ./bat.nix
     ./direnv.nix
@@ -14,6 +19,8 @@
     ./jq.nix
     ./kitty.nix
     ./lazygit.nix
+    ./lutris.nix
+    ./mako.nix
     ./packages.nix
     ./ripgrep.nix
     ./starship.nix
@@ -21,12 +28,15 @@
     ./tmux.nix
     ./xdg.nix
     ./yazi.nix
+    ./zathura.nix
     ./zed-editor.nix
     ./zsh.nix
   ];
 
-  # NOTE: TEMP
-  programs.fuzzel.enable = true;
+  # NOTE: temp
+  stylix.iconTheme.package = pkgs.papirus-icon-theme;
+  stylix.iconTheme.light = "Papirus Light";
+  stylix.iconTheme.dark = "Papirus Dark";
 
   home = {
     username = "${username}";

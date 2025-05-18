@@ -2,7 +2,7 @@
   programs.waybar.settings.bar = {
     pulseaudio = {
       format = "{icon}  {volume}%";
-      format-muted = "";
+      format-muted = " ";
       format-icons = {
         default = ["" "" " "];
         headphone = "";
