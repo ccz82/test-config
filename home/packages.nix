@@ -1,18 +1,12 @@
-{
-  pkgs,
-  inputs,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
-    # browser
-    inputs.zen-browser.packages."${system}".default
-
     # utilities
     pwvucontrol
     brightnessctl
     zip
     unzip
     lazysql
+    hexxy
 
     # runtimes
     python3
@@ -23,6 +17,9 @@
     prismlauncher
 
     # programs
+    vesktop
+    obs-studio
     tiled
+    parsec-bin
   ];
 }

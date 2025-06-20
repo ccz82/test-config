@@ -8,8 +8,8 @@
     enable = true;
     settings."$mod" = "ALT";
   };
-
   imports = [
+    ./xdph.nix
     ./hypridle.nix
     ./hyprlock.nix
     ./hyprpolkitagent.nix

@@ -18,6 +18,6 @@
       websearch.prefix = "?";
       switcher.prefix = "/";
     };
-    # style = builtins.readFile ;
+    # style = builtins.readFile ./style.css;
   };
 }

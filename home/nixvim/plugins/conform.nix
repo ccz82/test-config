@@ -3,8 +3,8 @@
     alejandra
     shfmt
     biome
-    nodePackages.prettier
     rustfmt
+    nodePackages.prettier
   ];
 
   plugins = {

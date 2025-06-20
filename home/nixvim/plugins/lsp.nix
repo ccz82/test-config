@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{
   plugins = {
     lsp = {
       enable = true;
@@ -18,10 +18,7 @@
         clangd.enable = true;
         basedpyright.enable = true;
         ruff.enable = true;
-        ocamllsp = {
-          enable = true;
-          package = pkgs.ocamlPackages.ocaml-lsp;
-        };
+        ocamllsp.enable = true;
         rust_analyzer = {
           enable = true;
           installCargo = false;
@@ -36,6 +33,12 @@
         tailwindcss.enable = true;
         astro.enable = true;
         marksman.enable = true;
+        tinymist = {
+          enable = true;
+          settings = {
+            formatterMode = "typstyle";
+          };
+        };
       };
     };
   };

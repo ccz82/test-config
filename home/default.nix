@@ -1,8 +1,4 @@
-{
-  username,
-  pkgs,
-  ...
-}: {
+{username, ...}: {
   imports = [
     ./hyprland
     ./nixvim
@@ -34,6 +30,7 @@
     ./yazi.nix
     ./zathura.nix
     ./zed-editor.nix
+    ./zen-browser.nix
     ./zsh.nix
   ];
 

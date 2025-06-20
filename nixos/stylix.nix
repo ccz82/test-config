@@ -9,8 +9,8 @@
     opacity.terminal = 0.8;
     fonts = {
       sansSerif = {
-        package = pkgs.noto-fonts;
-        name = "Noto Sans";
+        package = pkgs.rubik;
+        name = "Rubik";
       };
       serif = {
         package = pkgs.noto-fonts;

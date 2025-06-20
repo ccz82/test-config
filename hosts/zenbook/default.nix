@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{
   imports = [
     ./hardware-configuration.nix
     ../../nixos/audio.nix
@@ -7,6 +7,7 @@
     ../../nixos/environment.nix
     ../../nixos/flakes.nix
     ../../nixos/flatpak.nix
+    ../../nixos/fprintd.nix
     ../../nixos/graphics.nix
     ../../nixos/greetd.nix
     ../../nixos/i18n.nix
@@ -23,15 +24,7 @@
 
   # NOTE: this may be cursed
   nixpkgs.config.allowUnfree = true;
-
-  # NOTE: testing fingerprint out
-  systemd.services.fprintd = {
-    wantedBy = ["multi-user.target"];
-    serviceConfig.Type = "simple";
-  };
-  services.fprintd.enable = true;
-  services.fprintd.tod.enable = true;
-  services.fprintd.tod.driver = pkgs.libfprint-2-tod1-goodix-550a;
+  services.teamviewer.enable = true;
 
   networking.hostName = "zenbook";
 

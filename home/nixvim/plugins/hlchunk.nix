@@ -1,0 +1,5 @@
+{
+  plugins = {
+    hlchunk.enable = true;
+  };
+}
