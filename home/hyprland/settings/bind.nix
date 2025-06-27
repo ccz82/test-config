@@ -10,7 +10,6 @@
 
       "$mod SHIFT, f, fullscreen, 0"
       "$mod, Space, exec, walker"
-      "$mod SHIFT, w, exec, iwmenu -l walker"
       "$mod SHIFT, e, exec, bzmenu -l walker"
       "$mod, h, movefocus, l"
       "$mod, j, movefocus, d"

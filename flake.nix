@@ -10,7 +10,6 @@
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     walker.url = "github:abenz1267/walker";
-    iwmenu.url = "github:e-tho/iwmenu";
     bzmenu.url = "github:e-tho/bzmenu";
   };
 
@@ -30,6 +29,21 @@
         system = "x86_64-linux";
         modules = [
           ./hosts/zenbook
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.extraSpecialArgs = {inherit inputs username email;};
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.${username} = import ./home;
+          }
+          stylix.nixosModules.stylix
+        ];
+      };
+      chromebook = nixpkgs.lib.nixosSystem {
+        inherit specialArgs;
+        system = "x86_64-linux";
+        modules = [
+          ./hosts/chromebook
           home-manager.nixosModules.home-manager
           {
             home-manager.extraSpecialArgs = {inherit inputs username email;};

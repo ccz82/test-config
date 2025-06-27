@@ -7,7 +7,7 @@
     ../../nixos/environment.nix
     ../../nixos/flakes.nix
     ../../nixos/flatpak.nix
-    ../../nixos/fprintd.nix
+    # ../../nixos/fprintd.nix
     ../../nixos/graphics.nix
     ../../nixos/greetd.nix
     ../../nixos/i18n.nix
@@ -22,9 +22,7 @@
     ../../nixos/users.nix
   ];
 
-  # NOTE: this may be cursed
   nixpkgs.config.allowUnfree = true;
-  services.teamviewer.enable = true;
 
   networking.hostName = "zenbook";
 

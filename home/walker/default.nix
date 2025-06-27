@@ -6,7 +6,6 @@
   imports = [inputs.walker.homeManagerModules.default];
 
   home.packages = [
-    inputs.iwmenu.packages.${pkgs.system}.default
     inputs.bzmenu.packages.${pkgs.system}.default
   ];
 

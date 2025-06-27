@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     # utilities
+    ydotool
     pwvucontrol
     brightnessctl
     zip
@@ -17,9 +18,6 @@
     prismlauncher
 
     # programs
-    vesktop
     obs-studio
-    tiled
-    parsec-bin
   ];
 }
