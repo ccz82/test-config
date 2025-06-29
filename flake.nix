@@ -1,6 +1,11 @@
 {
   description = "ccz's nixos-config";
 
+  nixConfig = {
+    extra-substituters = ["https://walker.cachix.org"];
+    extra-trusted-public-keys = ["walker.cachix.org-1:fG8q+uAaMqhsMxWjwvk0IMb4mFPFLqHjuvfwQxE4oJM="];
+  };
+
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
