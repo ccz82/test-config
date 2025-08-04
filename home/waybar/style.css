@@ -7,8 +7,8 @@
 }
 
 window#waybar {
-  color: white;
-  background: transparent;
+  color: @theme_text_color;
+  background-color: rgba(29, 32, 33, 0.4);
 }
 
 .modules-left {
@@ -70,7 +70,7 @@ window#waybar {
 
 #cpu-usage,
 #memory-usage {
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 #custom-cpu,

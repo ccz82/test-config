@@ -8,6 +8,7 @@
     enable = true;
     settings."$mod" = "ALT";
   };
+
   imports = [
     ./xdph.nix
     ./hypridle.nix

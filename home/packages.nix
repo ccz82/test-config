@@ -1,6 +1,9 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     # utilities
+    yt-dlp
+    ffmpeg
+    blueman
     ydotool
     pwvucontrol
     brightnessctl
@@ -19,5 +22,6 @@
 
     # programs
     obs-studio
+    teamviewer
   ];
 }

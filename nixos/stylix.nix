@@ -1,12 +1,12 @@
 {pkgs, ...}: {
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
     image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/9d/wallhaven-9dmmr1.jpg";
-      sha256 = "sha256-5Gxsb8w3hUHQyXqUhdBPG++olt8OkuoQIfNSU6yeAtU=";
+      url = "https://w.wallhaven.cc/full/5y/wallhaven-5yd6d5.png";
+      sha256 = "sha256-KJV1PUMofXWlX/R8qUuIuhQTBnQ7QXXioWghkZQ/5Hk=";
     };
-    opacity.terminal = 0.8;
+    opacity.terminal = 0.75;
     fonts = {
       sansSerif = {
         package = pkgs.rubik;

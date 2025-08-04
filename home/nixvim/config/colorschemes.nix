@@ -1,6 +1,6 @@
 {
-  colorschemes.kanagawa = {
+  colorschemes.gruvbox = {
     enable = true;
-    settings.transparent = true;
+    settings.transparent_mode = true;
   };
 }

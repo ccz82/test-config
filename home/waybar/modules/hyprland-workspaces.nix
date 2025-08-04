@@ -1,7 +1,7 @@
 {
   programs.waybar.settings.bar = {
     "hyprland/workspaces" = {
-      format = "";
+      format = "{id}";
       tooltip = false;
     };
   };

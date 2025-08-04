@@ -6,7 +6,7 @@
     settings.bar = {
       layer = "top";
       position = "top";
-      modules-left = ["group/power" "group/controls" "mpris"];
+      modules-left = ["group/power" "group/controls" "idle_inhibitor"];
       modules-center = ["hyprland/workspaces"];
       modules-right = ["hyprland/submap" "group/cpu-usage" "group/memory-usage" "group/hardware" "clock"];
       spacing = 8;
@@ -17,7 +17,7 @@
   imports = [
     ./modules/group-power.nix
     ./modules/group-controls.nix
-    ./modules/mpris.nix
+    ./modules/idle-inhibitor.nix
     ./modules/pulseaudio.nix
     ./modules/backlight.nix
     ./modules/hyprland-workspaces.nix
