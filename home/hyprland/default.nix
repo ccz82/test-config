@@ -13,6 +13,7 @@
     ./xdph.nix
     ./hypridle.nix
     ./hyprlock.nix
+    ./hyprpaper.nix
     ./hyprpolkitagent.nix
     ./settings/general.nix
     ./settings/misc.nix

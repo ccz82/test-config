@@ -9,8 +9,7 @@
       "$mod, Print, exec, hyprshot -m region"
 
       "$mod SHIFT, f, fullscreen, 0"
-      "$mod, Space, exec, walker"
-      "$mod SHIFT, e, exec, bzmenu -l walker"
+      "$mod, Space, exec, sherlock"
       "$mod, h, movefocus, l"
       "$mod, j, movefocus, d"
       "$mod, k, movefocus, u"

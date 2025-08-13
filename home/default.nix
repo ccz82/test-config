@@ -2,7 +2,7 @@
   imports = [
     ./hyprland
     ./nixvim
-    ./walker
+    ./sherlock
     ./waybar
     ./bat.nix
     ./btop.nix

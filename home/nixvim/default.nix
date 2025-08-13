@@ -1,5 +1,5 @@
 {inputs, ...}: {
-  imports = [inputs.nixvim.homeManagerModules.nixvim];
+  imports = [inputs.nixvim.homeModules.nixvim];
 
   stylix.targets.nixvim.enable = false;
 

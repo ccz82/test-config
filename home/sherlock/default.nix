@@ -1,0 +1,5 @@
+{
+  programs.sherlock = {
+    enable = true;
+  };
+}
