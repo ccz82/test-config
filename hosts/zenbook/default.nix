@@ -6,15 +6,15 @@
     ../../nixos/bootloader.nix
     ../../nixos/environment.nix
     ../../nixos/flakes.nix
-    ../../nixos/flatpak.nix
-    # ../../nixos/fprintd.nix
+    # ../../nixos/flatpak.nix
     ../../nixos/graphics.nix
-    ../../nixos/greetd.nix
     ../../nixos/i18n.nix
     ../../nixos/laptop.nix
+    ../../nixos/ly.nix
     ../../nixos/networking.nix
     ../../nixos/openssh.nix
     ../../nixos/optimisation.nix
+    ../../nixos/overlays.nix
     ../../nixos/programs.nix
     ../../nixos/security.nix
     ../../nixos/stylix.nix

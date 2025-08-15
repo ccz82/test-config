@@ -1,6 +1,7 @@
 {username, ...}: {
+
   imports = [
-    ./hyprland
+    ./niri
     ./nixvim
     ./sherlock
     ./waybar
@@ -14,6 +15,7 @@
     ./git.nix
     ./gnome-keyring.nix
     ./helix.nix
+    ./hyprpaper.nix
     ./jq.nix
     ./kitty.nix
     ./lazygit.nix
@@ -23,7 +25,6 @@
     ./playerctld.nix
     ./ripgrep.nix
     ./starship.nix
-    ./stylix.nix
     ./tmate.nix
     ./tmux.nix
     ./xdg.nix

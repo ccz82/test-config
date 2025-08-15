@@ -6,7 +6,7 @@
       url = "https://w.wallhaven.cc/full/5y/wallhaven-5yd6d5.png";
       sha256 = "sha256-KJV1PUMofXWlX/R8qUuIuhQTBnQ7QXXioWghkZQ/5Hk=";
     };
-    opacity.terminal = 0.75;
+    # opacity.terminal = 0.75;
     fonts = {
       sansSerif = {
         package = pkgs.rubik;

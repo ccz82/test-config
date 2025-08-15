@@ -6,7 +6,6 @@
     blueman
     ydotool
     pwvucontrol
-    brightnessctl
     zip
     unzip
     lazysql

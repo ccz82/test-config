@@ -2,8 +2,8 @@
   environment = {
     pathsToLink = [
       "/share/zsh"
-      "/share/xdg-desktop-portal"
-      "/share/applications"
+      # "/share/xdg-desktop-portal"
+      # "/share/applications"
     ];
     systemPackages = with pkgs; [
       vim

@@ -6,6 +6,7 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     stylix.url = "github:danth/stylix";
+    niri.url = "github:sodiboo/niri-flake";
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
@@ -15,6 +16,7 @@
     nixpkgs,
     home-manager,
     stylix,
+    niri,
     ...
   }: let
     username = "ccz";
@@ -36,6 +38,7 @@
             home-manager.backupFileExtension = ".backup";
           }
           stylix.nixosModules.stylix
+          niri.nixosModules.niri
         ];
       };
       chromebook = nixpkgs.lib.nixosSystem {

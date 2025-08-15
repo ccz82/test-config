@@ -1,7 +1,7 @@
 {
   programs.waybar.settings.bar = {
-    "hyprland/submap" = {
-      format = "󰁌 ";
+    "niri/workspaces" = {
+      format = "{id}";
       tooltip = false;
     };
   };
