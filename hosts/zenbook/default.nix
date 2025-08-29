@@ -10,7 +10,7 @@
     ../../nixos/graphics.nix
     ../../nixos/i18n.nix
     ../../nixos/laptop.nix
-    ../../nixos/ly.nix
+    ../../nixos/greetd.nix
     ../../nixos/networking.nix
     ../../nixos/openssh.nix
     ../../nixos/optimisation.nix

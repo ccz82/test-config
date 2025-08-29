@@ -6,6 +6,7 @@
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
+    diagnostic.settings.virtual_text = true;
     imports = [
       ./config/globals.nix
       ./config/opts.nix

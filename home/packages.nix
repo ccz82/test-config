@@ -17,6 +17,8 @@
     nodejs
 
     # games
+    winetricks
+    wineWowPackages.waylandFull
     prismlauncher
 
     # programs

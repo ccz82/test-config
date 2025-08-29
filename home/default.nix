@@ -3,7 +3,6 @@
   imports = [
     ./niri
     ./nixvim
-    ./sherlock
     ./waybar
     ./bat.nix
     ./btop.nix
@@ -24,6 +23,7 @@
     ./packages.nix
     ./playerctld.nix
     ./ripgrep.nix
+    ./sherlock.nix
     ./starship.nix
     ./tmate.nix
     ./tmux.nix

@@ -1,5 +1,4 @@
 {pkgs, ...}: {
-  # services.displayManager.ly.enable = true;
   services.greetd = {
     enable = true;
     settings = {

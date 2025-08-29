@@ -10,6 +10,7 @@
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    zen-browser.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = inputs @ {
@@ -39,6 +40,11 @@
           }
           stylix.nixosModules.stylix
           niri.nixosModules.niri
+          {
+            nixpkgs.overlays = [
+              (import ./overlay.nix)
+            ];
+          }
         ];
       };
       chromebook = nixpkgs.lib.nixosSystem {
