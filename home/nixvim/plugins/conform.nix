@@ -19,6 +19,7 @@
         formatters_by_ft = {
           nix = ["alejandra"];
           sh = ["shfmt"];
+          typescript = ["prettier"];
           # TODO: Change to biome when it is ready
           html = ["prettier"];
           markdown = ["prettier"];

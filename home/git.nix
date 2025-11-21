@@ -5,10 +5,10 @@
 }: {
   programs.git = {
     enable = true;
-    userName = "${username}";
-    userEmail = "${email}";
-    extraConfig = {
+    settings = {
       init.defaultBranch = "main";
+      user.name = "${username}";
+      user.email = "${email}";
     };
   };
 }

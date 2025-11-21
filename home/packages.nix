@@ -1,5 +1,8 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    # kvm
+    ddcutil
+
     # utilities
     yt-dlp
     ffmpeg
@@ -13,8 +16,10 @@
 
     # runtimes
     python3
+    uv
     bun
     nodejs
+    zvm
 
     # games
     winetricks

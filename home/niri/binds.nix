@@ -3,7 +3,7 @@
     "Mod+Shift+Q".action = close-window;
     "Mod+Return".action = spawn "kitty";
     "Mod+Space".action = spawn "sherlock";
-    "Print".action = screenshot {show-pointer = true;};
+    "Print".action.screenshot = [];
     "Mod+H".action = focus-column-left;
     "Mod+J".action = focus-window-or-workspace-down;
     "Mod+K".action = focus-window-or-workspace-up;

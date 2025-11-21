@@ -1,5 +1,4 @@
 {username, ...}: {
-
   imports = [
     ./niri
     ./nixvim
@@ -17,6 +16,7 @@
     ./hyprpaper.nix
     ./jq.nix
     ./kitty.nix
+    ./lan-mouse.nix
     ./lazygit.nix
     ./lutris.nix
     ./mako.nix
@@ -27,6 +27,7 @@
     ./starship.nix
     ./tmate.nix
     ./tmux.nix
+    ./udiskie.nix
     ./xdg.nix
     ./yazi.nix
     ./zathura.nix
@@ -41,6 +42,9 @@
     sessionVariables = {
       MANPAGER = "nvim +Man!";
     };
+    sessionPath = [
+      "$HOME/.zvm/bin"
+    ];
     stateVersion = "24.05";
   };
 

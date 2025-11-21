@@ -6,9 +6,10 @@
     ../../nixos/bootloader.nix
     ../../nixos/environment.nix
     ../../nixos/flakes.nix
-    # ../../nixos/flatpak.nix
+    ../../nixos/flatpak.nix
     ../../nixos/graphics.nix
     ../../nixos/i18n.nix
+    ../../nixos/keyd.nix
     ../../nixos/laptop.nix
     ../../nixos/greetd.nix
     ../../nixos/networking.nix
@@ -19,8 +20,11 @@
     ../../nixos/security.nix
     ../../nixos/stylix.nix
     ../../nixos/timezone.nix
+    ../../nixos/udisks2.nix
     ../../nixos/users.nix
   ];
+
+  hardware.i2c.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 

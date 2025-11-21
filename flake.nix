@@ -5,6 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    lan-mouse.url = "github:feschber/lan-mouse";
     stylix.url = "github:danth/stylix";
     niri.url = "github:sodiboo/niri-flake";
     nixvim.url = "github:nix-community/nixvim";
@@ -16,6 +17,7 @@
   outputs = inputs @ {
     nixpkgs,
     home-manager,
+    lan-mouse,
     stylix,
     niri,
     ...
@@ -36,15 +38,9 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.${username} = import ./home;
-            home-manager.backupFileExtension = ".backup";
           }
           stylix.nixosModules.stylix
           niri.nixosModules.niri
-          {
-            nixpkgs.overlays = [
-              (import ./overlay.nix)
-            ];
-          }
         ];
       };
       chromebook = nixpkgs.lib.nixosSystem {

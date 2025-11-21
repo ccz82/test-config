@@ -1,6 +1,7 @@
 {
-  colorschemes.gruvbox = {
+  colorschemes.kanagawa = {
     enable = true;
-    settings.transparent_mode = true;
+    settings.background.dark = "dragon";
+    # settings.theme = "dragon";
   };
 }

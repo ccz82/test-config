@@ -2,19 +2,6 @@
   programs.sherlock = {
     enable = true;
     launchers = [
-      # {
-      #   name = "Weather";
-      #   type = "weather";
-      #   args = {
-      #     location = "Singapore";
-      #     update_interval = 60;
-      #   };
-      #   priority = 1;
-      #   home = "OnlyHome";
-      #   async = true;
-      #   shortcut = false;
-      #   spawn_focus = false;
-      # }
       {
         name = "Calculator";
         type = "calculation";
@@ -31,6 +18,37 @@
         args = {};
         priority = 2;
         home = "Home";
+      }
+      {
+        name = "AOC Monitor Input";
+        alias = "mi";
+        type = "command";
+        args = {
+          commands = {
+            DP = {
+              icon = "video-display";
+              exec = "ddcutil setvcp 0x60 0x0f";
+              search_string = "dp";
+              tag_start = "{keyword}";
+              tag_end = "{keyword}";
+            };
+            HDMI1 = {
+              icon = "video-display";
+              exec = "ddcutil setvcp 0x60 0x11";
+              search_string = "hdmi1";
+              tag_start = "{keyword}";
+              tag_end = "{keyword}";
+            };
+            HDMI2 = {
+              icon = "video-display";
+              exec = "ddcutil setvcp 0x60 0x12";
+              search_string = "hdmi2";
+              tag_start = "{keyword}";
+              tag_end = "{keyword}";
+            };
+          };
+        };
+        priority = 5;
       }
     ];
   };
