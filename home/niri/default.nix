@@ -6,6 +6,7 @@
 
   imports = [
     ./input.nix
+    ./outputs.nix
     ./binds.nix
     ./layout.nix
     ./window-rules.nix

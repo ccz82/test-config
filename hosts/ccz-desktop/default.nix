@@ -3,8 +3,7 @@
     ./hardware-configuration.nix
     ../../nixos/audio.nix
     ../../nixos/bluetooth.nix
-    # TODO: change this once zenbook is not using GRUB
-    ../../nixos/grub-bootloader.nix
+    ../../nixos/bootloader.nix
     ../../nixos/environment.nix
     ../../nixos/flakes.nix
     ../../nixos/flatpak.nix
@@ -12,7 +11,7 @@
     ../../nixos/i18n.nix
     ../../nixos/kernel.nix
     ../../nixos/keyd.nix
-    ../../nixos/laptop.nix
+    # ../../nixos/laptop.nix
     ../../nixos/greetd.nix
     ../../nixos/networking.nix
     ../../nixos/openssh.nix
@@ -28,9 +27,12 @@
 
   hardware.i2c.enable = true;
 
+  services.xserver.videoDrivers = ["nvidia"];
+  hardware.nvidia.open = true;
+
   nixpkgs.config.allowUnfree = true;
 
-  networking.hostName = "zenbook";
+  networking.hostName = "ccz-desktop";
 
   system.stateVersion = "24.05";
 }
