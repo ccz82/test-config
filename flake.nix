@@ -23,41 +23,27 @@
   }: let
     username = "ccz";
     email = "chunzhen82@gmail.com";
-    specialArgs = {inherit username inputs;};
+    mkHost = hostname:
+      nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = {inherit username inputs hostname;};
+        modules = [
+          ./hosts/${hostname}
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.extraSpecialArgs = {inherit inputs username email hostname;};
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.${username} = import ./home;
+          }
+          stylix.nixosModules.stylix
+          niri.nixosModules.niri
+        ];
+      };
   in {
     nixosConfigurations = {
-      zenbook = nixpkgs.lib.nixosSystem {
-        inherit specialArgs;
-        system = "x86_64-linux";
-        modules = [
-          ./hosts/zenbook
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.extraSpecialArgs = {inherit inputs username email;};
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.${username} = import ./home;
-          }
-          stylix.nixosModules.stylix
-          niri.nixosModules.niri
-        ];
-      };
-ccz-desktop = nixpkgs.lib.nixosSystem {
-        inherit specialArgs;
-        system = "x86_64-linux";
-        modules = [
-          ./hosts/ccz-desktop
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.extraSpecialArgs = {inherit inputs username email;};
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.${username} = import ./home;
-          }
-          stylix.nixosModules.stylix
-          niri.nixosModules.niri
-        ];
-      };
+      ccz-desktop = mkHost "ccz-desktop";
+      zenbook = mkHost "zenbook";
     };
   };
 }

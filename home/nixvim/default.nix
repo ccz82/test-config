@@ -27,7 +27,6 @@
       ./plugins/treesitter.nix
       ./plugins/web-devicons.nix
       ./plugins/typst-preview.nix
-      ./plugins/hlchunk.nix
     ];
   };
 }

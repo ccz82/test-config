@@ -1,14 +1,13 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    # kvm
-    ddcutil
-
-    # utilities
-    yt-dlp
-    ffmpeg
+    # gui utilities
+    obs-studio
     blueman
-    ydotool
     pwvucontrol
+
+    # cli utilities
+    ddcutil
+    yt-dlp
     zip
     unzip
     lazysql
@@ -22,12 +21,6 @@
     zvm
 
     # games
-    winetricks
-    wineWowPackages.waylandFull
     prismlauncher
-
-    # programs
-    obs-studio
-    teamviewer
   ];
 }

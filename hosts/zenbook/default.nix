@@ -8,13 +8,16 @@
     ../../nixos/environment.nix
     ../../nixos/flakes.nix
     ../../nixos/flatpak.nix
+    # ../../nixos/gaming.nix
     ../../nixos/graphics.nix
+    ../../nixos/i2c.nix
     ../../nixos/i18n.nix
     ../../nixos/kernel.nix
     ../../nixos/keyd.nix
     ../../nixos/laptop.nix
     ../../nixos/greetd.nix
     ../../nixos/networking.nix
+    # ../../nixos/nvidia.nix
     ../../nixos/openssh.nix
     ../../nixos/optimisation.nix
     ../../nixos/overlays.nix
@@ -25,8 +28,6 @@
     ../../nixos/udisks2.nix
     ../../nixos/users.nix
   ];
-
-  hardware.i2c.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
