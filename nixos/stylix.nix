@@ -1,12 +1,18 @@
 {pkgs, ...}: {
   stylix = {
     enable = true;
+
     base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa-dragon.yaml";
-    image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/d8/wallhaven-d8p7w3.jpg";
-      sha256 = "sha256-1F/l2YCHYQP3KY1jm9MLpUg7MWh2DTIo1DsTepU5pW0=";
-    };
+
+    polarity = "dark";
+
+    # image = pkgs.fetchurl {
+    #   url = "https://w.wallhaven.cc/full/ml/wallhaven-mlzoy1.png";
+    #   sha256 = "sha256-/iSzlSy1OoVUfXDc2pTbk9W/DaY5swSF+mnjDQurESo=";
+    # };
+
     # opacity.terminal = 0.75;
+
     fonts = {
       sansSerif = {
         package = pkgs.rubik;
@@ -22,11 +28,13 @@
       };
       sizes.terminal = 14;
     };
+
     cursor = {
       package = pkgs.posy-cursors;
       name = "Posy_Cursor_Black";
       size = 32;
     };
+
     icons = {
       enable = true;
       package = pkgs.mint-y-icons;

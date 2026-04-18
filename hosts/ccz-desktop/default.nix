@@ -17,16 +17,21 @@
     ../../nixos/greetd.nix
     ../../nixos/networking.nix
     ../../nixos/nvidia.nix
+    ../../nixos/openrgb.nix
     ../../nixos/openssh.nix
     ../../nixos/optimisation.nix
     ../../nixos/overlays.nix
     ../../nixos/programs.nix
     ../../nixos/security.nix
     ../../nixos/stylix.nix
+    ../../nixos/tailscale.nix
     ../../nixos/timezone.nix
+    ../../nixos/udev.nix
     ../../nixos/udisks2.nix
     ../../nixos/users.nix
   ];
+
+  virtualisation.spiceUSBRedirection.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 

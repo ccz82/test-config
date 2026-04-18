@@ -1,6 +1,13 @@
 {
+  # use rofi for now.
+  programs.rofi.enable = true;
   programs.sherlock = {
     enable = true;
+    # systemd.enable = true;
+    settings = {
+      binds.up = "control+p";
+      binds.down = "control+n";
+    };
     launchers = [
       {
         name = "Calculator";

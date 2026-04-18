@@ -2,7 +2,7 @@
   programs.niri.settings.binds = with config.lib.niri.actions; {
     "Mod+Shift+Q".action = close-window;
     "Mod+Return".action = spawn "kitty";
-    "Mod+Space".action = spawn "sherlock";
+    "Mod+Space".action = spawn "rofi" "-show" "drun";
     "Print".action.screenshot = [];
     "Mod+H".action = focus-column-left;
     "Mod+J".action = focus-window-or-workspace-down;

@@ -4,7 +4,7 @@
     shfmt
     biome
     rustfmt
-    nodePackages.prettier
+    prettier
   ];
 
   plugins = {
@@ -25,6 +25,7 @@
           markdown = ["prettier"];
           toml = ["prettier"];
           rust = ["rustfmt"];
+          ocaml = ["ocamlformat"];
         };
       };
     };

@@ -24,7 +24,7 @@
             position = "right";
             hostname = "ccz-desktop";
             ips = ["192.168.0.116"];
-            activate_on_startup = true;
+            # activate_on_startup = true;
           })
         (lib.mkIf
           (hostname == "ccz-desktop")
@@ -32,7 +32,7 @@
             position = "left";
             hostname = "zenbook";
             ips = ["192.168.0.124"];
-            activate_on_startup = true;
+            # activate_on_startup = true;
           })
       ];
     };

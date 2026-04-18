@@ -5,6 +5,9 @@
 }: {
   programs.zed-editor = {
     enable = true;
+    extensions = [
+      "zig"
+    ];
     userSettings = {
       vim_mode = true;
       relative_line_numbers = true;

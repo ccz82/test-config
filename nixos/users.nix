@@ -6,6 +6,6 @@
   users.users.${username} = {
     shell = pkgs.zsh;
     isNormalUser = true;
-    extraGroups = ["wheel" "networkmanager" "i2c"];
+    extraGroups = ["wheel" "networkmanager" "i2c" "wireshark"];
   };
 }

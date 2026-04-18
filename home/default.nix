@@ -9,11 +9,11 @@
     ./editorconfig.nix
     ./fastfetch.nix
     ./fd.nix
+    ./fzf.nix
     ./gh.nix
     ./git.nix
     ./gnome-keyring.nix
     ./helix.nix
-    ./hyprpaper.nix
     ./jq.nix
     ./kitty.nix
     ./lan-mouse.nix
@@ -25,6 +25,7 @@
     ./ripgrep.nix
     ./sherlock.nix
     ./starship.nix
+    ./taskwarrior.nix
     ./tmate.nix
     ./tmux.nix
     ./udiskie.nix
