@@ -7,8 +7,8 @@
 }
 
 window#waybar {
+  background: rgba(0, 0, 0, 0.2);
   color: @theme_text_color;
-  background-color: #1d2021;
 }
 
 .modules-left {

@@ -11,7 +11,7 @@
     #   sha256 = "sha256-/iSzlSy1OoVUfXDc2pTbk9W/DaY5swSF+mnjDQurESo=";
     # };
 
-    opacity.terminal = 0.75;
+    opacity.terminal = 0.85;
 
     fonts = {
       sansSerif = {

@@ -23,14 +23,5 @@
       default-column-width.fixed = 960;
       default-window-height.fixed = 540;
     }
-    # this may not be needed because of line 12, remove and check if it changes anything.
-    {
-      matches = [
-        {
-          title = "^kitty$";
-        }
-      ];
-      background-effect.blur = true;
-    }
   ];
 }

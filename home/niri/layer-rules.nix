@@ -3,7 +3,7 @@
     {
       matches = [
         {
-          title = "^waybar$";
+          namespace = "^waybar$";
         }
       ];
       background-effect.blur = true;
