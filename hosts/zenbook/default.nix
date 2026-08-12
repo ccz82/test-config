@@ -8,6 +8,7 @@
     ../../nixos/environment.nix
     ../../nixos/flakes.nix
     ../../nixos/flatpak.nix
+    ../../fprintd.nix
     # ../../nixos/gaming.nix
     ../../nixos/graphics.nix
     ../../nixos/i2c.nix
@@ -28,6 +29,9 @@
     ../../nixos/udisks2.nix
     ../../nixos/users.nix
   ];
+
+  # temporary Docker
+  virtualisation.docker.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 

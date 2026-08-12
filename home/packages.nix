@@ -20,6 +20,7 @@
     unzip
     lazysql
     hexxy
+    claude-code
 
     # runtimes
     python3
