@@ -2,7 +2,6 @@
   home.packages = with pkgs; [
     # gui utilities
     vial
-    moonlight-qt
     xclicker
     nautilus
     obs-studio

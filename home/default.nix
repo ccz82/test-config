@@ -20,6 +20,7 @@
     ./lazygit.nix
     ./lutris.nix
     ./mako.nix
+    ./nix-index.nix
     ./packages.nix
     ./playerctld.nix
     ./ripgrep.nix

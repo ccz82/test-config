@@ -4,7 +4,7 @@
     brightnessctl
   ];
 
-  programs.niri.package = pkgs.niri-unstable;
+  # programs.niri.package = pkgs.niri-unstable;
 
   imports = [
     ./input.nix
