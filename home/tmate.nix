@@ -1,3 +1,0 @@
-{
-  programs.tmate.enable = true;
-}

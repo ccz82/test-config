@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   xdg.enable = true;
+  xdg.userDirs.enable = true;
   xdg.portal = {
     enable = true;
     config.niri.default = ["gnome" "gtk"];

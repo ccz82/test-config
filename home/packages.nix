@@ -1,6 +1,10 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     # gui utilities
+    cantata
+    mpc
+    sonobus
+    vlc
     vial
     xclicker
     nautilus
@@ -11,15 +15,10 @@
 
     # cli utilities
     swaybg
-    aria2
-    gdb
     ddcutil
-    yt-dlp
     zip
     unzip
-    lazysql
     hexxy
-    claude-code
 
     # runtimes
     python3

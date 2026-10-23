@@ -16,6 +16,7 @@
     # ../../nixos/laptop.nix
     ../../nixos/greetd.nix
     ../../nixos/networking.nix
+    ../../nixos/nh.nix
     ../../nixos/nvidia.nix
     ../../nixos/openrgb.nix
     ../../nixos/openssh.nix
@@ -31,7 +32,8 @@
     ../../nixos/users.nix
   ];
 
-  virtualisation.spiceUSBRedirection.enable = true;
+  # migrate this elsewhere, maybe in docker.nix
+  virtualisation.docker.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 

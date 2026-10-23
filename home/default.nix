@@ -3,8 +3,10 @@
     ./niri
     ./nixvim
     ./waybar
+    ./aria2.nix
     ./bat.nix
     ./btop.nix
+    ./claude-code.nix
     ./direnv.nix
     ./editorconfig.nix
     ./fastfetch.nix
@@ -18,8 +20,10 @@
     ./kitty.nix
     ./lan-mouse.nix
     ./lazygit.nix
+    ./lazysql.nix
     ./lutris.nix
     ./mako.nix
+    ./mpd.nix
     ./nix-index.nix
     ./packages.nix
     ./playerctld.nix
@@ -27,11 +31,11 @@
     ./sherlock.nix
     ./starship.nix
     ./taskwarrior.nix
-    ./tmate.nix
     ./tmux.nix
     ./udiskie.nix
     ./xdg.nix
     ./yazi.nix
+    ./yt-dlp.nix
     ./zathura.nix
     ./zed-editor.nix
     ./zen-browser.nix
